@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-06-09T12:09:37.054772931+07:00",
+  "ref": "887be9db9f103fec62554ee468023d71",
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "sdNo": "SD2505M04C-000038",
+    "createdDate": "2025-05-27T09:44:31.904Z",
+    "items": [
+      {
+        "barcode": "8850393800532",
+        "toteCode": "8850393800532",
+        "productName": "บีทาเก้นไลท์ไขมัน0%300ml",
+        "isTote": false,
+        "qty": 2,
+        "actualQty": 1,
+        "unitName": "แพค",
+        "unitFactor": 2,
+        "diffQty": -1
+      },
+      {
+        "barcode": "8850393919937",
+        "toteCode": "8850393919937",
+        "productName": "บีทาเก้นนมเปรี้ยวพร่องมันเนย85cc x6",
+        "isTote": false,
+        "qty": 2,
+        "actualQty": 1,
+        "unitName": "แพค",
+        "unitFactor": 1,
+        "diffQty": -1
+      },
+      {
+        "barcode": "8851717021114",
+        "toteCode": "8851717021114",
+        "productName": "ดัชชี่โยเกิร์ตสตรอเบอรี่135g",
+        "isTote": false,
+        "qty": 3,
+        "actualQty": 2,
+        "unitName": "แพค",
+        "unitFactor": 4,
+        "diffQty": -1
+      },
+      {
+        "barcode": "TLGG051274",
+        "toteCode": "TLGG051274",
+        "productName": "",
+        "isTote": true,
+        "qty": 1,
+        "actualQty": 0,
+        "unitName": "",
+        "unitFactor": 0,
+        "diffQty": -1
+      },
+      {
+        "barcode": "18851111423030",
+        "toteCode": "18851111423030",
+        "productName": "มามี่โพโคทิชชู่เปียกไวพส์เซฟ&แคร์80แผ่น Carton",
+        "isTote": false,
+        "qty": 0,
+        "actualQty": 1,
+        "unitName": "ลัง",
+        "unitFactor": 12,
+        "diffQty": 1
+      },
+      {
+        "barcode": "BMBA000180",
+        "toteCode": "BMBA000180",
+        "productName": "",
+        "isTote": true,
+        "qty": 0,
+        "actualQty": 1,
+        "unitName": "",
+        "unitFactor": 0,
+        "diffQty": 1
+      }
+    ]
+  }
+}

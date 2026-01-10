@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "357095196765",
+    "project_id": "cj-poshh-dev",
+    "storage_bucket": "cj-poshh-dev.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357095196765:android:e41a7e0dce1fbfd323a5b4",
+        "android_client_info": {
+          "package_name": "com.example.administrator.psd_pricetagchecking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmPz12199IhfL_6hfrfEB1dAuarQTKOUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357095196765:android:6262cc45b829ef3123a5b4",
+        "android_client_info": {
+          "package_name": "th.co.cjexpress.store.sage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmPz12199IhfL_6hfrfEB1dAuarQTKOUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

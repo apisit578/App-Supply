@@ -1,0 +1,124 @@
+apply plugin: 'jacoco'
+
+android {
+    buildTypes {
+        debug {
+            enableUnitTestCoverage true
+//            FirebasePerformance {
+//                instrumentationEnabled false
+//            }
+        }
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+            returnDefaultValues = true
+        }
+    }
+}
+
+jacoco {
+    toolVersion = '0.8.8'
+}
+
+tasks.withType(Test) {
+    jacoco.includeNoLocationClasses = true
+    jacoco.excludes = ['jdk.internal.*']
+}
+
+//Configuration of tasks can depend on the final state of the project
+project.afterEvaluate {
+
+    android.applicationVariants.all { variant ->
+        if (variant.buildType.name == "debug") {
+            def flavorName = variant.flavorName
+            def variantName = variant.name
+            def capitalizedVariantName = variantName.capitalize()
+
+            // Define JaCoCo report task
+            tasks.register("jacocoTestReport${capitalizedVariantName}", JacocoReport) {
+                group = "Reporting"
+                description = "Generate Jacoco coverage reports on the testDebugUnitTest build."
+
+                //Reports Configuration
+                reports {
+                    xml.getRequired().set(true)
+                    html.getRequired().set(true)
+                    csv.getRequired().set(false)
+                }
+
+                //File Filtering for exclude
+                def fileFilter = [
+                        '**/R.class',
+                        '**/R$*.class',
+                        '**/BuildConfig.*',
+                        '**/Manifest*.*',
+                        //'**/*Adapter*.*',
+                        '**/*Fragment*.*',
+                        '**/*manager/**',
+                        '**/*activity/**',
+                        '**/*network/**',
+                        '**/*Api/**',
+                        '**/di/**',
+                        '**/*_Factory*',
+                        '**/*_Provide*Factory*',
+                        '**/*Test*',
+                        '**/model/**/*',
+                        '**/*callback/**/*',
+                        '**/*state/**/*',
+                        '**/*$*',
+                ]
+
+                //Class Directories
+                def javaClasses = fileTree(
+                        dir: "${buildDir}/intermediates/javac/${variantName}",
+                        excludes: fileFilter)
+                def kotlinClasses = fileTree(
+                        dir: "${buildDir}/tmp/kotlin-classes/${variantName}",
+                        excludes: fileFilter)
+                classDirectories.from = files([kotlinClasses, javaClasses])
+
+                //Source Directories
+                def coverageSourceDirs = ["src/$flavorName/java"]
+                additionalSourceDirs.setFrom(files(coverageSourceDirs))
+                sourceDirectories.setFrom(files(coverageSourceDirs))
+
+                //Execution Data
+                executionData.setFrom(fileTree(dir: projectDir, includes: ["**/*.exec", "**/*.ec"]))
+
+                //Apply dependencies configuration
+                dependsOn(
+                        "compile${capitalizedVariantName}UnitTestJavaWithJavac",
+                        "test${capitalizedVariantName}UnitTest",
+                        //'extractIncludeReleaseProto',
+                        //'extractReleaseProto',
+                        "compile${capitalizedVariantName}JavaWithJavac",
+                        //'processReleaseGoogleServices',
+                        "merge${capitalizedVariantName}Resources",
+                        "merge${capitalizedVariantName}Assets",
+                        "transform${capitalizedVariantName}ClassesWithAsm",
+                        "check${capitalizedVariantName}DuplicateClasses",
+                        "desugar${capitalizedVariantName}FileDependencies",
+                        //'mergeExtDexRelease',
+                        //'mergeDexRelease',
+                        "merge${capitalizedVariantName}GlobalSynthetics",
+                        "bundle${capitalizedVariantName}Resources",
+                        "merge${capitalizedVariantName}JniLibFolders",
+                        "merge${capitalizedVariantName}JavaResource",
+                        "merge${capitalizedVariantName}NativeLibs",
+                        "build${capitalizedVariantName}PreBundle",
+                        "extract${capitalizedVariantName}NativeSymbolTables",
+                        "strip${capitalizedVariantName}DebugSymbols",
+                        //'validateSigningRelease',
+                        "compile${capitalizedVariantName}AndroidTestJavaWithJavac",
+                        //'extractIncludeDebugAndroidTestProto',
+                        "generate${capitalizedVariantName}AndroidTestResValues"
+                )
+
+                doLast {
+                    println("Jacoco XML Report generated at: ${reports.xml.outputLocation.get().asFile.absolutePath}")
+                }
+            }
+        }
+    }
+}

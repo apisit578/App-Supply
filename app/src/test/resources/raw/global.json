@@ -1,0 +1,86 @@
+{
+  "branchCode" : "global_handheld",
+  "featureEnable" : {
+    "loginAD" : true,
+    "checkBranchIp" : true,
+    "menuRequestDiscountRTC" : true,
+    "menuPriceTagChecking" : true,
+    "menuProductReceive" : true,
+    "menuStockReplenish" : true,
+    "menuStockTranfer" : true,
+    "menuManagerChecking" : true,
+    "menuSetMinMaxLocation" : true,
+    "menuToteChecking" : true,
+    "menuToteTranfer" : true
+  },
+  "oAuth" : {
+    "cjAuth" : {
+      "uniqueId" : "cjAuth",
+      "url" : "https://cj-auth-internal-dev.cjexpress.io/auth/realms/cjexpress/protocol/openid-connect/token",
+      "grantType" : "client_credentials",
+      "clientId" : "app.pos-handheld",
+      "clientSecret" : "JBLh7rV23He3J7h1Yrp31SQFPcUf85yp"
+    },
+    "keycloak" : {
+      "uniqueId" : "keycloak",
+      "url" : "https://cj-auth-internal-dev.cjexpress.io/auth/realms/cjexpress/protocol/openid-connect/token",
+      "grantType" : "password",
+      "clientId" : "web.pos-handheld",
+      "timeout" : 15000
+    }
+  },
+  "services" : {
+    "branch-ip" : {
+      "authType" : "OAUTH",
+      "name" : "branch-ip",
+      "oauth" : "cjAuth",
+      "timeout" : 15000,
+      "url" : "https://branch-master-api-dev.cjexpress.io/branches/by-ip"
+    },
+    "getBdList" : {
+      "authType" : "NONE",
+      "name" : "getBdList",
+      "timeout" : 15000,
+      "url" : "https://posadminapi-dev.cjexpress.io/storm/handheld-adapter/campaign/getBdList"
+    },
+    "getBdDetail" : {
+      "authType" : "NONE",
+      "name" : "getBdDetail",
+      "timeout" : 15000,
+      "url" : "https://posadminapi-dev.cjexpress.io/storm/handheld-adapter/campaign/getBdDetail"
+    },
+    "getMasterMapping" : {
+      "authType" : "NONE",
+      "name" : "getMasterMapping",
+      "timeout" : 15000,
+      "url" : "https://posadminapi-dev.cjexpress.io/storm/handheld-adapter/master/mapping/search"
+    }
+  },
+  "loginGroups" : [
+    {
+      "groupName" : "service.posback/branch-manager",
+      "canSelectBranch" : false
+    },
+    {
+      "groupName" : "service.posback/branch-staff",
+      "canSelectBranch" : false
+    },
+    {
+      "groupName" : "service.posback/oc",
+      "canSelectBranch" : true
+    },
+    {
+      "groupName" : "service.posback/audit",
+      "canSelectBranch" : true
+    },
+    {
+      "groupName" : "service.posback/amoc",
+      "canSelectBranch" : true
+    },
+    {
+      "groupName" : "service.posback/area-manager",
+      "canSelectBranch" : true
+    }
+  ],
+  "updatedBy" : "admin@mail.com"
+}

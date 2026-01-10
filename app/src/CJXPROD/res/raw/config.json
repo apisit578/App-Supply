@@ -1,0 +1,7 @@
+{
+  "url": "https://cjx-configuration-payload-api.cjexpress.io/documents/handhelds/",
+  "globalPath": "global_handheld",
+  "configMaxRetry": 2,
+  "configRetryDelay": 3000,
+  "configTimeout": 5000
+}

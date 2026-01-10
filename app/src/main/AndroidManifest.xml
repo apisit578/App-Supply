@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".presentation.MainApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Sage"
+        tools:targetApi="31">
+        <activity
+            android:name=".presentation.activity.orderReceive.OrderReceiveItemDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.reprintQrFresh.ReprintQrFreshItemDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.reprintQrFresh.ReprintQrFreshItemsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.purchaseInvoice.PurchaseInvoiceListPOActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.purchaseInvoice.PurchaseInvoiceItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.purchaseInvoice.PurchaseInvoiceListPIActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.orderReceive.OrderReceiveSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.orderReceive.OrderReceiveDocsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.orderReceiveTote.OrderReceiveToteSummaryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.orderReceiveTote.OrderReceiveToteItemDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.orderReceiveTote.OrderReceiveToteInputExpireActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.orderReceiveTote.OrderReceiveToteItemsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.orderReceiveTote.OrderReceiveToteDocsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.requestDiscountRtc.RequestDiscountItemDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.requestDiscountRtc.RequestDiscountItemsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.requestDiscountRtc.RequestDiscountDocsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.mainMenu.MainMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.activity.orderReceive.OrderReceiveItemsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.purchaseInvoice.PurchaseInvoiceSupplierListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.purchaseInvoice.PurchaseInvoiceItemDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presentation.activity.purchaseInvoice.PurchaseInvoiceSummaryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+    </application>
+
+</manifest>

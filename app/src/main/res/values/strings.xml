@@ -1,0 +1,341 @@
+<resources>
+
+    <!-- General -->
+    <string name="text_save">บันทึก</string>
+    <string name="text_cancel_en">Cancel</string>
+    <string name="text_confirm_en">Confirm</string>
+    <string name="text_not_save">ไม่บันทึก</string>
+    <string name="text_none">ไม่มี</string>
+    <string name="text_detail">รายละเอียด</string>
+
+    <!-- App Info -->
+    <string name="text_sage">SAGE</string>
+    <string name="text_sage_full">Store Admin Guided Efficiently</string>
+    <string name="text_version">เวอร์ชั่น</string>
+    <string name="text_flavor_with_version">%1$s - %2$s</string>
+    <string name="app_name">SAGE - Store Admin Guided Efficiently</string>
+
+    <!-- Common -->
+    <string name="text_confirm_exit">คุณต้องการออกจาก\nหน้านี้ ใช่หรือไม่?</string>
+    <string name="text_unsaved_changes_warning_confirm_to_main">หากมีการเปลี่ยนแปลง\nแก้ไขข้อมูล จะไม่ถูกบันทึก\nกรุณากดปุ่ม ใช่\nเพื่อยืนยันกลับสู่เมนูหลัก</string>
+    <string name="text_unsaved_changes_warning_confirm_leave_page">หากมีการเปลี่ยนแปลง\nแก้ไขข้อมูล จะไม่ถูกบันทึก\nกรุณากดปุ่ม ใช่\nเพื่อยืนยันการออกจากหน้านี้</string>
+    <string name="text_confirm_back_to_main_menu">กรุณากดปุ่ม ใช่\nเพื่อยืนยันกลับสู่เมนูหลัก</string>
+    <string name="text_unauthorized">คุณไม่มีสิทธิ์ใช้งานเมนูนี้</string>
+    <string name="common_days">วัน</string>
+    <string name="common_months">เดือน</string>
+    <string name="common_years">ปี</string>
+
+    <!-- Login -->
+    <string name="text_login">เข้าสู่ระบบ</string>
+    <string name="text_login_failed">ไม่สามารถเข้าสู่ระบบได้</string>
+    <string name="text_username">รหัสผู้ใช้งาน</string>
+    <string name="text_username_required">กรุณากรอกชื่อผู้ใช้</string>
+    <string name="text_password">รหัสผ่าน</string>
+    <string name="text_enter_password">กรุณาระบุรหัสผ่าน</string>
+    <string name="text_password_required">กรุณากรอกรหัสผ่าน</string>
+
+    <!-- Branch Info -->
+    <string name="text_branch_with_code">สาขา: %1$s - %2$s</string>
+    <string name="text_branch_na">สาขา: N/A</string>
+    <string name="text_branch_code_not_found">ไม่พบข้อมูลรหัสสาขาของผู้ใช้</string>
+
+    <!-- Loading & Errors -->
+    <string name="text_loading_global_config">กำลังโหลดการตั้งค่าหลักของแอป...</string>
+    <string name="text_error_global_config">เกิดข้อผิดพลาดในขั้นตอนโหลดการตั้งค่าหลักของแอป</string>
+    <string name="text_checking_branch">กำลังตรวจสอบสาขาของเครื่อง...</string>
+    <string name="text_error_checking_branch">เกิดข้อผิดพลาดในขั้นตอนตรวจสอบสาขาของเครื่อง</string>
+    <string name="text_loading_branch_config">กำลังโหลดการตั้งค่าของสาขา...</string>
+    <string name="text_error_branch_config">เกิดข้อผิดพลาดในขั้นตอนโหลดการตั้งค่าของสาขา</string>
+    <string name="text_service_failed">เนื่องจากการติดต่อ Service ล้มเหลว</string>
+    <string name="text_error_data_not_found">เนื่องจากไม่พบข้อมูล</string>
+    <string name="text_error_check_information">กรุณาตรวจสอบข้อมูลให้ถูกต้อง</string>
+
+    <!-- Date Picker -->
+    <string name="text_select_expiry_date">เลือกวันหมดอายุ</string>
+    <string name="text_enter_expiry_date">กรุณาระบุวันหมดอายุ</string>
+    <string name="text_expiry_date">วันหมดอายุ</string>
+    <string name="text_expired_date_format">หมดอายุ: %1$s</string>
+    <string name="text_reprint_qr_expired_date_format">วันที่หมดอายุ: %1$s</string>
+
+    <!-- Log Message -->
+    <string name="log_message_clear_input_username">Clear Input Username</string>
+    <string name="log_message_clear_input_password">Clear Input Password</string>
+    <string name="log_message_open_login_sheet">Open Login Sheet</string>
+    <string name="log_message_login_success">Login successful for user: %1$s</string>
+    <string name="log_message_select_menu">Selected Menu : %1$s</string>
+    <string name="log_message_open_date_picker">Open date picker dialog</string>
+    <string name="log_message_clear_input_quantity">Clear input quantity</string>
+    <string name="log_message_open_scan_tote_dialog">Open scan new tote dialog</string>
+    <string name="log_message_close_scan_tote_dialog">Close dialog scan new tote</string>
+    <string name="log_message_tote_code">Tote code: %1$s</string>
+    <string name="log_message_doc_no">Doc No.: %1$s</string>
+    <string name="log_message_default_expired_date">Barcode: %1$s\nDefault Expired Date: %2$s</string>
+    <string name="log_message_confirm_expired_date">Barcode: %1$s\nConfirm Expired Date: %2$s\n%3$s</string>
+    <string name="log_message_unchecked_qr_print">สินค้ามี QR Code</string>
+    <string name="log_message_update_item">Update item : %1$s</string>
+    <string name="log_message_add_item">Add item : %1$s</string>
+    <string name="log_message_select_item">Select item : %1$s</string>
+    <string name="log_message_item_detail">Product Name: %1$s\nBarcode: %2$s\nDiscount Type: %3$s\nExp List : %4$s</string>
+    <string name="log_message_adjust_quantity_fresh_life">Product Name: %1$s\nBarcode: %2$s\nExpired Date: %3$s</string>
+    <string name="log_message_adjust_quantity_normal">Product Name: %1$s\nBarcode: %2$s</string>
+    <string name="log_message_incomplete_item">Incomplete item : %1$s</string>
+    <string name="log_message_sd_no">SD No.: %1$s</string>
+    <string name="log_message_ld_bt_no">LD/BT No.: %1$s</string>
+    <string name="log_message_open_scan_ld_dialog">Open scan LD/BT dialog</string>
+    <string name="log_message_close_scan_ld_dialog">Close dialog scan LD/BT</string>
+    <string name="log_message_select_supplier">Supplier code : %1$s</string>
+    <string name="log_message_filter_supplier">Search key : %1$s</string>
+    <string name="log_message_input_invoice_dialog">Bill No. : %1$s\nPI No. : %2$s\nSupplier code : %3$s</string>
+    <string name="log_message_create_po">Bill No. : %1$s\nPO No. : %2$s\nSupplier code : %3$s</string>
+    <string name="log_message_po_no">PO No.: %1$s</string>
+
+    <!-- Request Discount-->
+    <string name="text_menu_name_request_discount_rtc">ขอส่วนลด(RTC)</string>
+    <string name="text_menu_name_order_receive_tote">ตรวจสอบสินค้า\nภายใน Tote</string>
+    <string name="text_menu_name_order_receive">รับสินค้า\nจากคลัง</string>
+
+    <string name="text_please_select_discount_type">กรุณาเลือกประเภทส่วนลด</string>
+    <string name="text_document_number">เลขที่เอกสาร</string>
+    <string name="text_document_date">วันที่เอกสาร</string>
+    <string name="text_create_new_document">สร้างเอกสารใหม่</string>
+    <string name="text_search">ค้นหา</string>
+    <string name="text_ok">ตกลง</string>
+    <string name="text_cancel">ยกเลิก</string>
+    <string name="text_yes">ใช่</string>
+    <string name="text_no">ไม่ใช่</string>
+    <string name="text_unable_to_continue">ไม่สามารถดำเนินการ\nต่อได้</string>
+    <string name="text_because_service_connection_failed">การติดต่อ Service\nล้มเหลว</string>
+    <string name="text_close">ปิด</string>
+    <string name="text_title_main">MAIN</string>
+    <string name="text_price_tag_checking">ตรวจสอบป้ายราคา</string>
+    <string name="text_product_receive">รับสินค้า</string>
+    <string name="text_stock_replenish">เติมสินค้า</string>
+    <string name="text_stock_tranfer">โอนสินค้า</string>
+    <string name="text_manager_checking">ผู้จัดการตรวจงาน</string>
+    <string name="text_set_min_max_location">กำหนด Min Max ของ Location</string>
+    <string name="text_tote_checking">ตรวจนับ Tote</string>
+    <string name="text_tote_tranfer_to_head_office">โอน Tote กลับสำนักงานใหญ่</string>
+    <string name="text_please_input_or_scan_barcode">กรุณากรอก หรือ สแกนบาร์โค้ด\n/QR Code</string>
+    <string name="text_because">เนื่องจาก%1$s</string>
+    <string name="text_please_scan_tote">กรุณากรอก หรือ สแกนเลข Tote</string>
+    <string name="text_barcode_mismatch">เนื่องจากบาร์โค้ด/QR Code\nไม่ถูกต้อง</string>
+    <string name="text_barcode_or_qr_mismatch">เนื่องจากบาร์โค้ด/QR Code\nไม่ถูกต้อง\nกรุณาตรวจสอบและสแกนใหม่\nอีกครั้ง</string>
+    <string name="text_sd_tote_approve_fail_incomplete_items">มีสินค้า ขาด/เกิน\nไม่สามารถอนุมัติในนี้ได้\nให้นำเลขที่ %1$s\nไปทำการอนุมัติที่ POS-Admin</string>
+    <string name="text_please_check_and_scan_again">กรุณาตรวจสอบและสแกนใหม่\nอีกครั้ง</string>
+    <string name="text_tote_no_not_found">ไม่พบเลข\nTote: %1$s</string>
+    <string name="text_please_recheck_sd_document_and_try_again">กรุณาตรวจสอบใบยืนยันการรับสินค้า หรือ ลองใหม่อีกครั้ง</string>
+    <string name="text_confirm_to_delete">ยืนยันการลบ</string>
+    <string name="text_confirm_to_delete_qr">ยืนยันการลบ QR Code</string>
+    <string name="text_confirm_to_delete_barcode">ยืนยันการลบ Barcode</string>
+    <string name="text_confirm_to_remove_expiry_lot">คุณต้องการลบรายการ\nวันที่ %1$s\nใช่หรือไม่?</string>
+    <string name="text_title_qr_doc_no">เลขที่เอกสาร QR: %1$s</string>
+    <string name="text_title_doc_no">เอกสาร:\n%1$s</string>
+    <string name="text_title_tote_code">เลข Tote: %1$s</string>
+    <string name="text_confirm_to_save_document">ยืนยันการบันทึก\nเอกสาร</string>
+    <string name="text_confirm_to_approve_sd_tote_document">"ยืนยันการตรวจสอบสินค้าภายใน Tote\nใช่หรือไม่?"</string>
+    <string name="text_confirm_document_success">ยืนยันเอกสารสำเร็จ</string>
+    <string name="text_session_timeout">Session หมดอายุ</string>
+    <string name="text_please_sign_in_again">กรุณาเข้าสู่ระบบใหม่อีกครั้ง</string>
+    <string name="text_please_open_ticket_via_f1">กรุณาเปิดงานแจ้งไอทีผ่าน F1\n</string>
+    <string name="text_check_product_in_tote">ตรวจสอบสินค้าภายใน Tote</string>
+    <string name="text_product_bar">บาร์สินค้า</string>
+    <string name="text_product_bar_with_detail">บาร์สินค้า: %1$s</string>
+    <string name="text_please_fill_or_scan">กรุณากรอก หรือ สแกน</string>
+    <string name="text_product_list">รายการสินค้า (%1$d)</string>
+    <string name="text_receive_or_reference">รับ/อ้างอิง</string>
+    <string name="text_check">ตรวจสอบ</string>
+    <string name="text_chip_over">เกิน %1$d</string>
+    <string name="text_chip_under">ขาด %1$d</string>
+    <string name="text_chip_complete">ครบ</string>
+    <string name="text_product_expire_date">วันที่หมดอายุ: %1$s</string>
+    <string name="text_summary_title">สรุปผลต่างการตรวจสอบ</string>
+    <string name="text_result">ผลลัพธ์</string>
+    <string name="text_no_difference_found">ตรวจสอบครบแล้ว\nไม่มีรายการสินค้า\nขาด-เกิน</string>
+    <string name="text_back_to_main_menu">กลับเมนูหลัก</string>
+    <string name="text_confirm">ยืนยัน</string>
+    <string name="text_print_qr_code">พิมพ์ QR %1$d</string>
+    <string name="text_checkbox_qr_expire">สินค้าไม่มี QR Code</string>
+    <string name="title_barcode_qr_code">บาร์สินค้า/QR Code</string>
+    <string name="text_tote">Tote</string>
+    <string name="text_unit_carton">ลัง</string>
+    <string name="text_retry">ลองใหม่</string>
+    <string name="text_document_list">รายการเอกสาร (%1$d)</string>
+    <string name="text_document_date_format">วันที่: %1$s</string>
+    <string name="text_start_new_tote">เริ่ม Tote ใหม่</string>
+    <string name="text_scan_tote">กรุณาสแกนเลข Tote</string>
+    <string name="text_tote_number">เลข Tote</string>
+    <string name="text_product_info">ข้อมูลสินค้า</string>
+    <string name="text_set_qty">กำหนดจำนวนนับ</string>
+    <string name="text_quantity_with_unit">%1$d/%2$d %3$s</string>
+    <string name="text_format_quantity">%d %s</string>
+    <string name="text_discount_doc_title">เอกสารขอส่วนลด (RTC)</string>
+    <string name="text_create_doc">สร้างเอกสาร</string>
+    <string name="text_select_discount_type">กรุณาเลือกประเภทส่วนลด</string>
+    <string name="text_edit_discount_doc">แก้ไขเอกสารขอส่วนลด</string>
+    <string name="text_create_discount_doc">สร้างเอกสารขอส่วนลด</string>
+    <string name="text_confirm_edit_doc">ยืนยันการสร้างเอกสาร\nขอส่วนลดใช่หรือไม่?</string>
+    <string name="text_confirm_create_doc">ต้องการบันทึกการสร้างเอกสารขอส่วนลด\nใช่หรือไม่?</string>
+    <string name="text_save_success">บันทึกเอกสารสำเร็จ</string>
+    <string name="text_document_saved_number">เลขที่เอกสาร:\n%1$s</string>
+    <string name="text_save_failed">บันทึกเอกสารไม่สำเร็จ</string>
+    <string name="text_product_detail">รายละเอียดสินค้า</string>
+    <string name="text_product_name">ชื่อสินค้า</string>
+    <string name="text_quantity">จำนวน</string>
+    <string name="text_quantity_required">กรุณาระบุจำนวน</string>
+    <string name="text_delete_product">ลบสินค้ารายการนี้</string>
+    <string name="text_discount_created_date">วันที่ขอส่วนลด</string>
+    <string name="text_discount_doc_info">เอกสารเลขที่</string>
+    <string name="text_product_discount_unit">%1$s %2$s</string>
+    <string name="text_scan_or_enter_barcode">กรุณากรอก หรือ สแกนบาร์โค้ด</string>
+    <string name="label_doc_sd_no">เอกสาร SD:%1$s</string>
+    <string name="text_input_quantity">ระบุจำนวน</string>
+    <string name="text_not_found_data">ไม่พบข้อมูลในระบบ</string>
+    <string name="text_changed_status_document">เอกสารถูกเปลี่ยนสถานะแล้ว</string>
+    <string name="text_not_found_document">ไม่พบข้อมูลเอกสารนี้</string>
+    <string name="text_product_not_eligible">เนื่องจากสินค้าไม่เข้าเกณฑ์</string>
+    <string name="text_can_not_save_document">ไม่สามารถบันทึกเอกสารได้</string>
+
+    <!-- Order Receive Tote Item Detail-->
+    <string name="text_warning_please_scan_barcode">กรุณาสแกนบาร์โค้ด / QR Code\nเพื่อปลดล็อค และทำรายการ</string>
+    <string name="text_add_lot_item_title">ในกรณีที่สินค้ามีวันหมดอายุมากกว่า 1 วันที่</string>
+    <string name="text_add_lot_item_button">เพิ่มวันที่</string>
+    <string name="text_please_scan_barcode_or_qr_code">กรุณากรอก หรือ สแกนบาร์โค้ด / QR Code เพื่อแก้ไข</string>
+    <string name="text_confirm_exit_title_dialog">ยังไม่ได้บันทึกการแก้ไข</string>
+    <string name="text_confirm_exit_detail_dialog">หากออกตอนนี้\nข้อมูลจะไม่ถูกบันทึก</string>
+    <string name="text_scan_from_qr_code">สแกนจาก QR Code</string>
+    <string name="text_scan_from_barcode">สแกนจาก Barcode (ต้องปริ้น QR Code)</string>
+    <string name="text_docs_list_empty">ไม่มีรายการเอกสาร</string>
+    <string name="common_save">บันทึก</string>
+    <string name="text_error_tote_not_found">เนื่องจากไม่พบเลข\nTote: %s\nกรุณาตรวจสอบใบยืนยันการรับ\nสินค้า หรือ ลองใหม่อีกครั้ง</string>
+    <string name="text_info_tote_already_filled">เนื่องจากเลข\nTote: %1$s\nทำการเติมสินค้าแล้ว</string>
+    <string name="text_tote_already_checked">เนื่องจากเลข\nTote: %1$s\nทำการตรวจสอบแล้ว</string>
+    <string name="text_error_shipment_document_tote_not_found">เนื่องจากไม่พบข้อมูลเอกสารนี้</string>
+
+    <!-- Order Receive -->
+    <string name="text_title_scan_order_receive">สแกนรับสินค้า</string>
+    <string name="text_label_scan_order_receive">บาร์โค้ดสินค้า/Tote</string>
+    <string name="text_amount_receive">จำนวนรับ (%1$d)</string>
+    <string name="text_please_scan_barcode_receive">กรุณาสแกนรับสินค้า</string>
+    <string name="text_please_scan_barcode_receive_next_round"> กรุณาสแกนรับสินค้า\nรอบที่ %1$d\n(จำนวนสินค้าที่สแกน\nในรอบที่ผ่านมาล่าสุด\nจำนวน %2$d ลัง/แพค/Tote)</string>
+    <string name="text_start_over">เริ่มรอบใหม่</string>
+    <string name="text_please_scan_barcode">กรุณากรอก หรือ สแกนบาร์โค้ด</string>
+    <string name="text_amount_carton">%1$d ลัง</string>
+    <string name="text_title_no_barcode_in_shipment_order">สินค้าผิดเอกสาร</string>
+    <string name="text_detail_no_barcode_in_shipment_order">เนื่องจากสินค้านี้ไม่ได้อยู่ใน\nเลขที่เอกสาร: %1$s</string>
+    <string name="text_title_barcode_mismatch">บาร์โค้ดไม่ถูกต้อง</string>
+    <string name="text_order_receive">รับสินค้าจากคลัง</string>
+    <string name="text_please_fill_or_scan_ld">กรุณากรอก หรือ\nสแกนเลขที่เอกสาร LD/BT</string>
+    <string name="text_format_list_document">รายการเอกสาร (%s)</string>
+    <string name="text_format_date">วันที่: %s</string>
+    <string name="text_format_shipment_document_no">เลขที่เอกสาร: %s</string>
+    <string name="text_format_shipment_document_ld_no">เอกสาร LD/BT: %s</string>
+    <string name="text_start_order_receive">เริ่มรับสินค้า</string>
+    <string name="text_clear">ล้างค่า</string>
+    <string name="text_shipment_document_ld_no">เลขที่เอกสาร LD/BT</string>
+    <string name="text_please_scan_ld">กรุณาสแกนเอกสาร LD/BT</string>
+    <string name="text_scan_ld_not_found_please_scan_again">เนื่องจากเลขที่เอกสาร LD/BT\nไม่ถูกต้อง\nกรุณาตรวจสอบและสแกนใหม่อีกครั้ง</string>
+    <string name="text_data_not_found">ไม่พบข้อมูล</string>
+    <string name="text_title_error_order_receive_overstock">มีสินค้ารับเกิน</string>
+    <string name="text_detail_error_order_receive_overstock">%1$s\n%2$s</string>
+    <string name="text_order_receive_doc_ld_no">เลขที่เอกสาร LD/BT</string>
+    <string name="text_error_shipment_document_open_not_found_title">ไม่พบข้อมูล</string>
+    <string name="text_error_shipment_document_open_not_found_message">เลขที่เอกสาร: %s</string>
+    <string name="text_unsaved_items_back_warning">กรุณากดปุ่ม ใช่\nเพื่อยืนยันการออกจากหน้านี้</string>
+    <string name="text_confirm_to_save">คุณต้องการบันทึกเอกสาร\nนี้หรือไม่?</string>
+    <string name="text_confirm_to_save_order_receive">คุณต้องการบันทึกเอกสาร\nรับสินค้าจากคลัง\nใช่หรือไม่?</string>
+    <string name="text_please_recheck_before_save">กรุณาตรวจสอบความถูกต้อง\nก่อนบันทึก</string>
+    <string name="text_title_error_not_found_order">ไม่มีรายการสินค้า</string>
+    <string name="text_description_error_not_found_order">กรุณากรอก หรือ\nสแกนบาร์โค้ดสินค้า/Tote\nที่ต้องการสแกนรับ</string>
+    <string name="text_actual_qty_mismatch">จำนวนไม่ถูกต้อง</string>
+    <string name="text_title_over_max_qty">สินค้าเกิน</string>
+    <string name="text_detail_over_max_qty">%1$s ลัง/แพค/Tote</string>
+    <string name="text_document_status_changed">เนื่องจากเลขที่เอกสาร:\n%s\nถูกเปลี่ยนสถานะแล้ว</string>
+
+    <!-- Summary -->
+    <string name="text_summary_title_summary">สรุปผลต่างการรับสินค้า</string>
+    <string name="text_confirm_to_order_receive">ยืนยันการรับสินค้าจากคลัง\nใช่หรือไม่?</string>
+    <string name="text_summary_confirm_dialog_message">ยืนยันการรับสินค้าจากผู้จำหน่าย\nแบบอ้างอิง PO\nใช่หรือไม่?</string>
+    <string name="text_summary_confirm_dialog_message_without_po">ยืนยันการรับสินค้าจากผู้จำหน่าย\nแบบไม่อ้างอิง PO\nใช่หรือไม่?</string>
+
+    <!-- Purchase Invoice -->
+    <string name="text_supplier_not_found">ไม่พบข้อมูลผู้จำหน่าย</string>
+    <string name="text_input_supplier_require">กรุณากรอกรหัส หรือ\nชื่อผู้จำหน่าย</string>
+    <string name="text_title_purchase_invoice">รับสินค้าจากผู้จำหน่าย</string>
+    <string name="text_document_no_purchase_invoice_pi">เลขที่เอกสาร:\n%s</string>
+    <string name="text_document_no_purchase_invoice_po">เลขที่ใบสั่งซื้อ PO: %s</string>
+    <string name="text_menu_name_purchase_invoice">รับสินค้าจาก\nผู้จำหน่าย</string>
+    <string name="text_purchase_invoice_title">รับสินค้าจากผู้จำหน่าย</string>
+    <string name="text_search_supplier">ค้นหาผู้จำหน่าย</string>
+    <string name="text_enter_barcode_or_supplier_name">กรุณากรอก หรือ สแกนบาร์โค้ด รหัส/ชื่อผู้จำหน่าย</string>
+    <string name="text_format_list_supplier">รายการผู้จำหน่าย (%s)</string>
+    <string name="text_list_supplier_empty">ไม่มีรายการผู้จำหน่าย</string>
+    <string name="text_no_pending_purchase_order">ไม่มีเลขที่ใบสั่งซื้อที่ค้างรับ</string>
+    <string name="text_confirm_leave_page">กรุณากดปุ่ม ใช่\nเพื่อยืนยันการออกจากหน้านี้</string>
+    <string name="text_bill_no_validation_placeholder">กรุณากรอก A-Z, 0-9, /, -, .</string>
+    <string name="text_product_barcode">บาร์โค้ดสินค้า</string>
+    <string name="text_title_confirm_back_to_main_menu">คุณต้องการกลับสู่เมนู\nหลัก ใช่หรือไม่?</string>
+    <string name="text_purchase_order_barcode_mismatch">บาร์โค้ดนี้ไม่อยู่\nในรายการ</string>
+    <string name="text_purchase_order_barcode">บาร์โค้ด: %1$s</string>
+    <string name="text_title_amount_receive">จำนวนรับ/อ้างอิง</string>
+    <string name="text_alert_over_actual_qty">จำนวนรับต้องไม่เกินจำนวน\nอ้างอิง</string>
+    <string name="text_purchase_invoice_warning_please_scan_barcode">กรุณาสแกนบาร์โค้ด เพื่อปลดล็อค\nและทำรายการ</string>
+    <string name="text_format_unit_per_factor">หน่วย: %s/%d</string>
+    <string name="text_error_po_not_found">เนื่องจากไม่พบข้อมูล\nเลขที่ใบสั่งซื้อ PO: %1$s</string>
+    <string name="text_error_supplier_disabled">เนื่องจากรหัสผู้จำหน่าย :\n%1$s\nถูกปิดการใช้งานแล้ว</string>
+    <string name="text_error_supplier_not_found">เนื่องจากไม่พบข้อมูล\nรหัสผู้จำหน่าย : %1$s</string>
+    <string name="text_error_po_already_received">เนื่องจากเลขที่ใบสั่งซื้อ PO :\n%1$s\nทำการรับสินค้าแล้ว</string>
+    <string name="text_error_duplicate_bill_no">เลขที่บิลซ้ำ</string>
+    <string name="text_qty_received_not_equal_zero">จำนวนที่รับต้องไม่เท่ากับ 0</string>
+    <string name="text_error_supplier_mismatch">บาร์โค้ด: %1$s\nไม่ตรงกับผู้จำหน่าย</string>
+    <string name="text_error_sku_inactive_title">สินค้าไม่อนุญาตซื้อ</string>
+    <string name="text_error_sku_inactive_desc">เนื่องจาก สินค้าไม่อยู่ในสถานะ Active</string>
+    <string name="text_dialog_change_barcode_title">คุณต้องการเปลี่ยน\nบาร์โค้ดรับสินค้าใช่หรือไม่?</string>
+    <string name="text_dialog_change_barcode_desc">บาร์โค้ด: %1$s\nอยู่ในสถานะไม่อนุญาตซื้อ</string>
+    <string name="text_dialog_remove_barcode_desc">คุณต้องการลบสินค้า\nบาร์โค้ด: %1$s\nใช่หรือไม่?</string>
+    <string name="text_error_empty_barcode">กรุณากรอก หรือ\nสแกนบาร์โค้ดสินค้า\nที่ต้องการสแกนรับ</string>
+    <string name="text_leave_page_any_change_not_be_save_and_go_to_main">หากมีการเปลี่ยนแปลงแก้ไข\nข้อมูลจะไม่ถูกบันทึก\nกรุณากดปุ่ม ใช่ เพื่อยืนยันกลับสู่เมนูหลัก</string>
+    <string name="text_title_set_receive_qty">กำหนดจำนวนรับ</string>
+
+    <!-- Purchase Invoice Summary-->
+    <string name="text_title_purchase_invoice_summary">สรุปผลการรับสินค้า</string>
+    <string name="text_title_supplier">ผู้จำหน่าย</string>
+    <string name="text_document_no_purchase_invoice_summary_po">เลขที่ใบสั่งซื้อ PO</string>
+    <string name="text_purchase_invoice_summary_amount">จำนวนรายการ</string>
+    <string name="text_purchase_invoice_summary_receive">จำนวนรับ</string>
+    <string name="text_purchase_invoice_summary_ordered_value">มูลค่าที่สั่ง</string>
+    <string name="text_purchase_invoice_summary_received_value">มูลค่าที่รับ</string>
+    <string name="text_purchase_invoice_summary_error">มีจำนวนรับไม่ครบ</string>
+    <string name="text_purchase_invoice_summary_accept">จำนวนรับครบแล้ว</string>
+    <string name="text_please_input_or_scan_invoice_no">กรุณากรอก หรือ \nสแกนเลขที่บิลผู้จำหน่าย</string>
+    <string name="text_incorrect_bill_no">เลขที่บิลรูปแบบ\nไม่ถูกต้อง</string>
+    <string name="text_please_verify_data">กรุณาตรวจสอบข้อมูลให้ถูกต้อง</string>
+    <string name="text_title_please_input_or_scan_invoice_no">กรุณาสแกน/กรอก\nเลขที่บิลผู้จำหน่าย\n(Invoice No.)</string>
+    <string name="text_search_po_document">ค้นหาใบสั่งซื้อ</string>
+    <string name="text_pleas_fill_up_po_document">กรุณากรอกเลขที่ใบสั่งซื้อ</string>
+    <string name="text_head_line_supplier">ผู้จำหน่าย</string>
+    <string name="text_head_line_list_po">รายการใบสั่งซื้อ PO (%1$d)</string>
+    <string name="text_head_line_po_summary">ยอดรวมทั้งสิ้น</string>
+    <string name="text_po_number">เลขที่ใบสั่งซื้อ PO: \n%s</string>
+    <string name="text_po_due_date">วันที่กำหนดส่ง: %s</string>
+    <string name="text_error_pi_status_is_not_draft">เนื่องจากเลขที่เอกสาร:\n%s\nถูกเปลี่ยนสถานะแล้ว</string>
+    <string name="text_confirm_to_remove_item_by_barcode">คุณต้องการลบสินค้า\nบาร์โค้ด: %s\nใช่หรือไม่?</string>
+    <string name="text_purchase_invoice_summary_bill_no">"เลขที่บิลผู้จำหน่าย (Inv.) :\n"</string>
+    <string name="text_edit">แก้ไข</string>
+    <string name="text_number_receive">จำนวนที่รับ</string>
+
+
+    <!-- Reprint QR Fresh-->
+    <string name="text_title_input_qr_qty">ระบุจำนวนพิมพ์ QR Code</string>
+    <string name="text_menu_name_reprint_qr">พิมพ์ QR สินค้า</string>
+    <string name="text_please_input_expire_date">กรุณาระบุวันที่หมดอายุ</string>
+    <string name="text_title_expire_date_mismatch">วันที่หมดอายุไม่ถูกต้อง</string>
+    <string name="text_expire_date_mismatch">กรุณาตรวจสอบและระบุใหม่อีกครั้ง</string>
+    <string name="text_expire_date_lower">วันที่หมดอายุน้อยกว่าวันที่ปัจจุบัน</string>
+    <string name="text_qr_code_qty_mismatch">จำนวนที่พิมพ์ QR ต้องไม่เท่ากับ 0</string>
+    <string name="text_title_input_date">วันที่หมดอายุ - วัน/เดือน/ปี(ค.ศ.)</string>
+    <string name="text_qr_print_amount">จำนวน QR</string>
+    <string name="text_question_confirm_to_save_qr_document">ยืนยันการพิมพ์ QR สินค้า\nใช่หรือไม่</string>
+    <string name="text_expiration_date_is_incorrect">เนื่องจากวันหมดอายุไม่ถูกต้อง</string>
+    <string name="text_go_to_reprint_qr_menu_on_posadmin">เข้าเมนู พิมพ์ QR สินค้า\nที่ POS Admin เพื่อพิมพ์ QR ซ่อม\nเลขที่เอกสาร QR:\n%s</string>
+    <string name="text_not_found_barcode_data">ไม่พบข้อมูลบาร์โค้ด</string>
+</resources>

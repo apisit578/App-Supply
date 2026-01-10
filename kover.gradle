@@ -1,0 +1,40 @@
+kover {
+    reports {
+        filters {
+            excludes {
+                androidGeneratedClasses()
+                classes(
+                        "**.R.class",
+                        "**.R\$*.class",
+                        "**.BuildConfig.*",
+                        "**.Manifest*.*",
+                        "**.*Fragment*.*",
+                        "**.*Application.class",
+                        "**.*Manager",
+                        "**.*Api.**",
+                        "**.*_Factory*",
+                        "**.*_Provide*Factory*",
+                        "**.*Test*",
+                        "**.*\$*",
+                        "**.*Hilt*",
+                        "**.*hilt*",
+                )
+                packages(
+                        "**.*manager",
+                        "**.*activity.**",
+                        "**.*network",
+                        "**.di.**",
+                        "**.di",
+                        "**.model",
+                        "**.*callback.**.*",
+                        "**.*state",
+                        "**.*\$*",
+                        "**.*hilt*",
+                        "*hilt*",
+                        "**.*ui",
+                        "**.*utils",
+                )
+            }
+        }
+    }
+}
